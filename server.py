@@ -192,7 +192,6 @@ class NewsAPIServer:
                 api_params['country'] = 'us'
             
             # Call NewsAPI
-            print(f"[DEBUG] API params: {api_params}")
             response = requests.get(f"{self.base_url}/top-headlines", params=api_params)
             data = response.json()
             
